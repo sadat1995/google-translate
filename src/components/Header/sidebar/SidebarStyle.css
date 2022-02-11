@@ -1,0 +1,49 @@
+.sidebar {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  background-color: #fff;
+  width: 280px;
+  box-shadow: 0 0 16px rgb(0 0 0 / 28%);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 0s linear 0s;
+  text-align: center;
+  z-index: 5;
+}
+.sidebar-active {
+  left: 0;
+  transition: 350ms;
+}
+.google-logo {
+  height: 100px;
+  width: 160px;
+}
+.about:first-child {
+  padding-top: 0;
+}
+.about:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+.about {
+  padding: 8px 0;
+}
+.about-link {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  line-height: 40px;
+  overflow: hidden;
+  padding: 4px;
+  padding-left: 48px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  vertical-align: top;
+}
+.about-link:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.sidebar-info {
+  padding: 8px 0;
+}

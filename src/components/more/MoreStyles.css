@@ -1,0 +1,50 @@
+.more-container::after {
+  height: 20vh;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+.more-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 48px;
+  padding-bottom: 72px;
+}
+.more-item {
+  cursor: pointer;
+  margin: 0 18px;
+  text-align: center;
+}
+.icons {
+  color: #757575;
+  height: 32px;
+  width: 32px;
+}
+.icon-container {
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 50%;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  width: 60px;
+}
+.more-text {
+  color: rgba(0, 0, 0, 0.54);
+  font-family: "Google Sans", "sans-serif";
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  margin-top: 8px;
+}
+@media screen and (min-width: 720px) {
+  .more-item {
+    margin: 0 31px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .more-container {
+    background-color: #f5f5f5;
+  }
+}

@@ -1,0 +1,160 @@
+.dropdown-content {
+  display: none;
+  position: absolute;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 20%);
+  z-index: 5;
+  right: 8px;
+  top: 62px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.active {
+  display: block;
+}
+.profile-dropdown {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.divider {
+  width: 100%;
+  margin: 0;
+  border: 1px solid #e8eaed;
+}
+.profile-image-container {
+  margin-bottom: 10px;
+  position: relative;
+  height: 86px;
+  width: 86px;
+}
+.profile-image {
+  border: none;
+  margin-right: 6px;
+  vertical-align: top;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.info {
+  margin: 20px 33px;
+}
+.camera-icon {
+  bottom: 0;
+  box-shadow: 0 1px 1px 0 rgb(65 69 73 / 30%), 0 1px 3px 1px rgb(65 69 73 / 15%);
+  margin: 0px 2.5px 3px;
+  outline: 0;
+  position: absolute;
+  right: 8px;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+.manage-btn {
+  background-color: #ffffff;
+  border: 1px solid #dadce0;
+  border-radius: 100px;
+  color: #3c4043;
+  display: inline-block;
+  font: 500 14px/16px Google Sans, Roboto, RobotoDraft, Helvetica, Arial,
+    sans-serif;
+  letter-spacing: 0.25px;
+  margin: 16px 0 0;
+  max-width: 254px;
+  outline: 0;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.manage-btn:hover {
+  background-color: #f7f8f8;
+}
+.email {
+  color: #5f6368;
+  font: 400 14px/19px Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+  letter-spacing: normal;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.name {
+  color: #202124;
+  font: 500 16px/22px Google Sans, Roboto, RobotoDraft, Helvetica, Arial,
+    sans-serif;
+  letter-spacing: 0.29px;
+  margin: 0;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.add-account {
+  width: 77%;
+  color: #3c4043;
+  font: 500 14px/16px Google Sans, Roboto, RobotoDraft, Helvetica, Arial,
+    sans-serif;
+  letter-spacing: 0.25px;
+  outline: 0;
+  padding: 14px 41px;
+  text-align: center;
+  text-decoration: none;
+  color: #5f6368;
+}
+.add-account:hover {
+  background-color: #f7f8f8;
+}
+.add-text {
+  padding-left: 16px;
+}
+.sign-out {
+  padding: 0 17px;
+}
+.sign-out-btn {
+  background-color: #ffffff;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  display: inline-block;
+  font: 500 14px/16px Google Sans, Roboto, RobotoDraft, Helvetica, Arial,
+    sans-serif;
+  letter-spacing: 0.15px;
+  margin: 16px;
+  outline: 0;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  white-space: normal;
+}
+.sign-out-btn:hover {
+  background-color: #f7f8f8;
+}
+.footer {
+  color: #5f6368;
+  margin: 14px 33px;
+  text-align: center;
+  font: 13px/27px Roboto, RobotoDraft, Arial, sans-serif;
+}
+.footer-link:hover {
+  background-color: #f7f8f8;
+}
+@media screen and (min-width: 361px) {
+  .profile-dropdown,
+  .dropdown-content {
+    width: 354px;
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 361px) {
+  .profile-dropdown,
+  .dropdown-content {
+    width: calc(100vw - 12px * 2);
+    padding-left: 0;
+  }
+  .add-account {
+    width: 72%;
+  }
+}
